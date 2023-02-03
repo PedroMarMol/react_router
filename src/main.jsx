@@ -1,9 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import './index.css'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>test || test</div>
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  <p>test</p>
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
