@@ -40,7 +40,7 @@ export default function Root() {
           </nav>
         </div>
         <div id="detail">
-          <Outlet />
+          <Outlet />  
         </div>
       </>
     );
